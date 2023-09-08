@@ -4,21 +4,21 @@ import { CognitoUserSession } from 'amazon-cognito-identity-js';
 
 export interface Session {
   idToken: {
-    token: string,
-    expiration: number,
-  },
+    token: string;
+    expiration: number;
+  };
   accessToken: {
-    token: string,
-    expiration: number,
-  },
-  refreshToken?: string,
+    token: string;
+    expiration: number;
+  };
+  refreshToken?: string;
 }
 
 const useSession = (): Session | undefined => {
   const [session, setSession] = useState<CognitoUserSession>();
 
   useEffect(() => {
-    Auth.currentSession().then(it => {
+    Auth.currentSession().then((it) => {
       setSession(it);
       localStorage.setItem('token', it.getIdToken().getJwtToken());
     });
@@ -35,7 +35,7 @@ const useSession = (): Session | undefined => {
         expiration: session.getAccessToken().getExpiration(),
       },
       refreshToken: session.getRefreshToken().getToken(),
-    }
+    };
   }
   return undefined;
 };

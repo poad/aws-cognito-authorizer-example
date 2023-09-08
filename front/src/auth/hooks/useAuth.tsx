@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import { Auth } from 'aws-amplify';
 import { ICredentials } from '@aws-amplify/core';
 

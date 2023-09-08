@@ -7,8 +7,10 @@ const awsconfig = {
     oauth: {
       domain: process.env.NEXT_PUBLIC_AWS_COGNITO_OAUTH_DOMAIN as string,
       scope: ['email', 'profile', 'openid', 'aws.cognito.signin.user.admin'],
-      redirectSignIn: process.env.NEXT_PUBLIC_AWS_COGNITO_OAUTH_REDIRECT_SIGNIN as string,
-      redirectSignOut: process.env.NEXT_PUBLIC_AWS_COGNITO_OAUTH_REDIRECT_SIGNOUT as string,
+      redirectSignIn: process.env
+        .NEXT_PUBLIC_AWS_COGNITO_OAUTH_REDIRECT_SIGNIN as string,
+      redirectSignOut: process.env
+        .NEXT_PUBLIC_AWS_COGNITO_OAUTH_REDIRECT_SIGNOUT as string,
       responseType: 'code',
     },
   },

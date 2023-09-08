@@ -1,6 +1,11 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { ApolloClient, createHttpLink, InMemoryCache,  ApolloProvider } from '@apollo/client';
+import {
+  ApolloClient,
+  createHttpLink,
+  InMemoryCache,
+  ApolloProvider,
+} from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
 const entpoint = process.env.NEXT_PUBLIC_GRAPHQL_API_ENDPOINT_URL;
@@ -15,14 +20,14 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : "",
-    }
-  }
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
 });
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
 });
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => (

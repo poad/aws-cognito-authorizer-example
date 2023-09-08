@@ -5,11 +5,11 @@ import { GraphQLSchema } from 'graphql';
 import * as fs from 'fs';
 import resolvers from './resolvers';
 
-const schemaFilePath = fs.existsSync('/var/task/schema.gql') ? '/var/task/schema.gql' : '../../../schema.gql';
+const schemaFilePath = fs.existsSync('/var/task/schema.gql')
+  ? '/var/task/schema.gql'
+  : '../../../schema.gql';
 const schema = loadSchemaSync(schemaFilePath, {
-  loaders: [
-    new GraphQLFileLoader(),
-  ],
+  loaders: [new GraphQLFileLoader()],
 });
 
 const schemaWithResolvers: GraphQLSchema = addResolversToSchema({

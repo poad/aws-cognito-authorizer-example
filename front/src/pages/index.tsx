@@ -1,11 +1,9 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from 'next';
+import Head from 'next/head';
 import { Amplify } from 'aws-amplify';
-import {
-  withAuthenticator,
-} from '@aws-amplify/ui-react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 import awsconfig from '../aws-config';
 import useSession from '../auth/hooks/useSession';
 import Fetch from '../fetch/components';
@@ -14,14 +12,13 @@ import GraphQLFetch from '../graphql';
 Amplify.configure(awsconfig);
 
 interface HomeProps {
-  signOut: () => Promise<void>
+  signOut: () => Promise<void>;
 }
 
 const Home: NextPage<HomeProps> = (props?: HomeProps): JSX.Element => {
-
   const session = useSession();
 
-  const { signOut } = props || { signOut: () => { } };
+  const { signOut } = props || { signOut: () => {} };
 
   return (
     <div className={styles.container}>
@@ -37,23 +34,20 @@ const Home: NextPage<HomeProps> = (props?: HomeProps): JSX.Element => {
         </div>
 
         <div>
-          <div><Fetch label="ID token" token={session?.idToken.token}/></div>
+          <div>
+            <Fetch label="ID token" token={session?.idToken.token} />
+          </div>
         </div>
 
         <h2>GraphQL</h2>
         <GraphQLFetch />
-
       </main>
 
-      <footer className={styles.footer}>
-
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
-  )
-}
+  );
+};
 
 export default withAuthenticator<HomeProps>(Home, {
-  signUpAttributes: [
-    'email'
-  ]
+  signUpAttributes: ['email'],
 });
