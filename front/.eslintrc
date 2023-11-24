@@ -17,8 +17,8 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "plugin:@next/next/recommended",
     "plugin:@typescript-eslint/recommended",
+    "prettier",
     "next/core-web-vitals"
   ],
   "plugins": [

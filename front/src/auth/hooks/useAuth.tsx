@@ -1,16 +1,18 @@
 import { useEffect, useState } from 'react';
-import { Auth } from 'aws-amplify';
-import { ICredentials } from '@aws-amplify/core';
+import { AuthTokens, fetchAuthSession } from '@aws-amplify/core';
+import { AWSCredentials } from '@aws-amplify/core/internals/utils';
 
 const useAuth = () => {
-  const [credentials, setCredentials] = useState<ICredentials>();
+  const [credentials, setCredentials] = useState<AWSCredentials>();
+  const [tokens, setTokens] = useState<AuthTokens>();
   const [loaded, setLoaded] = useState<boolean>(false);
   const [error, setError] = useState<Error>();
 
   useEffect(() => {
-    Auth.currentUserCredentials()
-      .then((credentials) => {
-        setCredentials(credentials);
+    fetchAuthSession()
+      .then((session) => {
+        setCredentials(session.credentials);
+        setTokens(session.tokens);
         setLoaded(true);
       })
       .catch((error) => setError(error));
@@ -18,6 +20,7 @@ const useAuth = () => {
 
   return {
     credentials,
+    tokens,
     loaded,
     error,
   };

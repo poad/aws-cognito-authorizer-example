@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Auth } from 'aws-amplify';
-import { CognitoUserSession } from 'amazon-cognito-identity-js';
+import { fetchAuthSession } from '@aws-amplify/core';
+import { AuthSession } from '@aws-amplify/core/dist/esm/singleton/Auth/types';
 
 export interface Session {
   idToken: {
@@ -15,26 +15,26 @@ export interface Session {
 }
 
 const useSession = (): Session | undefined => {
-  const [session, setSession] = useState<CognitoUserSession>();
+  const [session, setSession] = useState<AuthSession>();
 
   useEffect(() => {
-    Auth.currentSession().then((it) => {
+    fetchAuthSession()
+    .then((it) => {
       setSession(it);
-      localStorage.setItem('token', it.getIdToken().getJwtToken());
+      localStorage.setItem('token', it.tokens?.idToken?.toString() ?? '');
     });
   }, []);
 
-  if (session && session.isValid()) {
+  if (session) {
     return {
       idToken: {
-        token: session.getIdToken().getJwtToken(),
-        expiration: session.getIdToken().getExpiration(),
+        token: session.tokens?.idToken?.toString() ?? '',
+        expiration: session.tokens?.idToken?.payload.exp ?? 0,
       },
       accessToken: {
-        token: session.getAccessToken().getJwtToken(),
-        expiration: session.getAccessToken().getExpiration(),
+        token: session.tokens?.accessToken?.toString() ?? '',
+        expiration: session.tokens?.accessToken?.payload.exp ?? 0,
       },
-      refreshToken: session.getRefreshToken().getToken(),
     };
   }
   return undefined;
