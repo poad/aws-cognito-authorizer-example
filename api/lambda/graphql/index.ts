@@ -9,24 +9,13 @@ import {
   Callback,
   Context,
 } from 'aws-lambda';
-import * as log4js from 'log4js';
 import schemaWithResolvers from './schema';
 import 'source-map-support/register';
-
-log4js.configure({
-  appenders: {
-    out: { type: 'stdout', layout: { type: 'pattern', pattern: '%m%n' } },
-  },
-  categories: { default: { appenders: ['out'], level: 'info' } },
-});
-
-const logger = log4js.getLogger();
 
 const schema = schemaWithResolvers;
 const server = new ApolloServer({
   schema,
   introspection: true,
-  logger,
 });
 
 export async function handler(

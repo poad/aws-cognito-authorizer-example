@@ -3,10 +3,11 @@ import {
   CognitoIdentityProviderClient,
   AdminGetUserCommand,
 } from '@aws-sdk/client-cognito-identity-provider';
-import * as log4js from 'log4js';
 import { Resolvers } from '../types/generated/graphql';
+import { Logger } from '@aws-lambda-powertools/logger';
 
-const logger = log4js.getLogger();
+const logger = new Logger();
+
 
 const resolvers: Resolvers = {
   Query: {

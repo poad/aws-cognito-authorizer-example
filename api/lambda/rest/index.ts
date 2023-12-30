@@ -3,15 +3,9 @@ import {
   CognitoIdentityProviderClient,
   AdminGetUserCommand,
 } from '@aws-sdk/client-cognito-identity-provider';
-import * as log4js from 'log4js';
+import { Logger } from '@aws-lambda-powertools/logger';
 
-log4js.configure({
-  appenders: {
-    out: { type: 'stdout', layout: { type: 'pattern', pattern: '%m%n' } },
-  },
-  categories: { default: { appenders: ['out'], level: 'info' } },
-});
-const logger = log4js.getLogger();
+const logger = new Logger();
 
 export const handler: APIGatewayProxyHandler = async (
   event,
