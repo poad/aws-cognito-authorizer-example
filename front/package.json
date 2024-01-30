@@ -15,7 +15,7 @@
     "generate": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
-    "@apollo/client": "^3.8.10",
+    "@apollo/client": "^3.9.0",
     "@aws-amplify/core": "^6.0.13",
     "@aws-amplify/ui-react": "^6.1.2",
     "@graphql-tools/load-files": "^7.0.0",
@@ -38,7 +38,7 @@
     "@graphql-codegen/typescript": "^4.0.1",
     "@graphql-codegen/typescript-apollo-client-helpers": "^3.0.0",
     "@graphql-codegen/typescript-react-apollo": "^4.1.0",
-    "@types/node": "^20.11.10",
+    "@types/node": "^20.11.12",
     "@types/react": "^18.2.48",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
