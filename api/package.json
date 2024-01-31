@@ -18,7 +18,7 @@
   "devDependencies": {
     "@apollo/server": "^4.10.0",
     "@as-integrations/aws-lambda": "^3.1.0",
-    "@aws-sdk/client-cognito-identity-provider": "^3.503.1",
+    "@aws-sdk/client-cognito-identity-provider": "^3.504.0",
     "@graphql-codegen/cli": "^5.0.0",
     "@graphql-codegen/introspection": "^4.0.0",
     "@graphql-codegen/jsdoc": "^3.0.0",
@@ -29,7 +29,7 @@
     "@graphql-tools/load": "^8.0.1",
     "@graphql-tools/schema": "^10.0.2",
     "@types/aws-lambda": "^8.10.133",
-    "@types/node": "^20.11.13",
+    "@types/node": "^20.11.14",
     "@types/source-map-support": "^0.5.10",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
