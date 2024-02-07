@@ -18,7 +18,7 @@
   "devDependencies": {
     "@apollo/server": "^4.10.0",
     "@as-integrations/aws-lambda": "^3.1.0",
-    "@aws-sdk/client-cognito-identity-provider": "^3.507.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.509.0",
     "@graphql-codegen/cli": "^5.0.2",
     "@graphql-codegen/introspection": "^4.0.2",
     "@graphql-codegen/jsdoc": "^3.0.0",
