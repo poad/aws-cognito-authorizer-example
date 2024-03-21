@@ -45,7 +45,7 @@
     "graphql-codegen-typescript-validation-schema": "^0.12.1",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.2",
+    "typescript": "^5.4.3",
     "yup": "^1.4.0"
   },
   "dependencies": {
