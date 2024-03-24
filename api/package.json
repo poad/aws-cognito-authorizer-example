@@ -16,9 +16,9 @@
     "generate": "graphql-codegen --config codegen.yml"
   },
   "devDependencies": {
-    "@apollo/server": "^4.10.1",
+    "@apollo/server": "^4.10.2",
     "@as-integrations/aws-lambda": "^3.1.0",
-    "@aws-sdk/client-cognito-identity-provider": "^3.535.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.540.0",
     "@graphql-codegen/cli": "^5.0.2",
     "@graphql-codegen/introspection": "^4.0.3",
     "@graphql-codegen/jsdoc": "^3.0.0",
