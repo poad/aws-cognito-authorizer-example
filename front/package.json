@@ -15,15 +15,15 @@
     "generate": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
-    "@apollo/client": "^3.9.9",
-    "@aws-amplify/core": "^6.0.25",
+    "@apollo/client": "^3.9.10",
+    "@aws-amplify/core": "^6.0.26",
     "@aws-amplify/ui-react": "^6.1.6",
     "@graphql-tools/load-files": "^7.0.0",
     "@graphql-tools/merge": "^9.0.3",
     "@graphql-tools/schema": "^10.0.3",
     "@graphql-yoga/node": "^3.9.1",
     "amazon-cognito-identity-js": "^6.3.12",
-    "aws-amplify": "^6.0.25",
+    "aws-amplify": "^6.0.26",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",
     "next": "^14.1.4",
