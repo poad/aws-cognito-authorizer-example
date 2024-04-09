@@ -8,7 +8,6 @@ import { Logger } from '@aws-lambda-powertools/logger';
 
 const logger = new Logger();
 
-
 const resolvers: Resolvers = {
   Query: {
     username: (_: unknown, __: unknown, context: unknown) => {

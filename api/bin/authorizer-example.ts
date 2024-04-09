@@ -8,7 +8,7 @@ const environment = app.node.tryGetContext('env');
 const userPoolName = app.node.tryGetContext('userPoolName');
 const config = app.node.tryGetContext(environment);
 
-// eslint-disable-next-line no-new
+ 
 new AuthorizerExampleStack(app, 'AuthorizerExampleStack', {
   environment,
   userPoolName,

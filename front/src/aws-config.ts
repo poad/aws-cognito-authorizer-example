@@ -1,4 +1,4 @@
-import { AuthConfig } from "@aws-amplify/core";
+import { AuthConfig } from '@aws-amplify/core';
 
 const awsconfig = {
   aws_project_region: process.env.NEXT_PUBLIC_AWS_REGION as string,

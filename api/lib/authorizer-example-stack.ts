@@ -217,7 +217,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
       }
     );
 
-    // eslint-disable-next-line no-new
+     
     new CfnIdentityPoolRoleAttachment(this, 'IdentityPoolRoleAttachment', {
       identityPoolId: identityPool.ref,
       roles: {
@@ -394,7 +394,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
         authorizer,
       });
 
-    // eslint-disable-next-line no-new
+     
     new GatewayResponse(this, 'UnauthorizedGatewayResponse', {
       restApi: api,
       type: ResponseType.UNAUTHORIZED,
@@ -404,7 +404,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
       },
     });
 
-    // eslint-disable-next-line no-new
+     
     new GatewayResponse(this, 'ClientErrorGatewayResponse', {
       restApi: api,
       type: ResponseType.DEFAULT_4XX,
@@ -413,7 +413,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
       },
     });
 
-    // eslint-disable-next-line no-new
+     
     new GatewayResponse(this, 'ServerErrorGatewayResponse', {
       restApi: api,
       type: ResponseType.DEFAULT_5XX,

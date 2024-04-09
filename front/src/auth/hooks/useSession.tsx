@@ -18,8 +18,7 @@ const useSession = (): Session | undefined => {
   const [session, setSession] = useState<AuthSession>();
 
   useEffect(() => {
-    fetchAuthSession()
-    .then((it) => {
+    fetchAuthSession().then((it) => {
       setSession(it);
       localStorage.setItem('token', it.tokens?.idToken?.toString() ?? '');
     });
