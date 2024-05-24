@@ -18,7 +18,7 @@
   "devDependencies": {
     "@apollo/server": "^4.10.4",
     "@as-integrations/aws-lambda": "^3.1.0",
-    "@aws-sdk/client-cognito-identity-provider": "^3.582.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.583.0",
     "@graphql-codegen/cli": "^5.0.2",
     "@graphql-codegen/introspection": "^4.0.3",
     "@graphql-codegen/jsdoc": "^3.0.0",
@@ -30,7 +30,7 @@
     "@types/aws-lambda": "^8.10.138",
     "@types/node": "^20.12.12",
     "@types/source-map-support": "^0.5.10",
-    "aws-cdk": "^2.142.1",
+    "aws-cdk": "^2.143.0",
     "aws-lambda": "^1.0.7",
     "esbuild": "^0.21.3",
     "graphql": "^16.8.1",
@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@aws-lambda-powertools/logger": "^2.1.1",
-    "aws-cdk-lib": "^2.142.1",
+    "aws-cdk-lib": "^2.143.0",
     "constructs": "^10.3.0",
     "source-map-support": "^0.5.21"
   },
