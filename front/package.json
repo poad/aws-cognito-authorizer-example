@@ -20,7 +20,7 @@
     "@aws-amplify/ui-react": "^6.1.12",
     "@graphql-tools/load-files": "^7.0.0",
     "@graphql-tools/merge": "^9.0.4",
-    "@graphql-tools/schema": "^10.0.3",
+    "@graphql-tools/schema": "^10.0.4",
     "@graphql-yoga/node": "^3.9.1",
     "amazon-cognito-identity-js": "^6.3.12",
     "aws-amplify": "^6.3.4",
