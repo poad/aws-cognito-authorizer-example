@@ -28,7 +28,7 @@
     "@graphql-tools/load": "^8.0.2",
     "@graphql-tools/schema": "^10.0.4",
     "@types/aws-lambda": "^8.10.140",
-    "@types/node": "^20.14.7",
+    "@types/node": "^20.14.8",
     "@types/source-map-support": "^0.5.10",
     "aws-cdk": "^2.147.0",
     "aws-lambda": "^1.0.7",
