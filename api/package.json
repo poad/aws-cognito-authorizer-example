@@ -28,7 +28,7 @@
     "@graphql-tools/load": "^8.0.2",
     "@graphql-tools/schema": "^10.0.4",
     "@types/aws-lambda": "^8.10.141",
-    "@types/node": "^20.14.10",
+    "@types/node": "^20.14.11",
     "@types/source-map-support": "^0.5.10",
     "aws-cdk": "^2.149.0",
     "aws-lambda": "^1.0.7",
@@ -40,7 +40,7 @@
     "yup": "^1.4.0"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^2.4.0",
+    "@aws-lambda-powertools/logger": "^2.5.0",
     "aws-cdk-lib": "^2.149.0",
     "constructs": "^10.3.0",
     "source-map-support": "^0.5.21"
