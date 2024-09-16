@@ -40,7 +40,7 @@
     "yup": "^1.4.0"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^2.7.0",
+    "@aws-lambda-powertools/logger": "^2.8.0",
     "aws-cdk-lib": "^2.158.0",
     "constructs": "^10.3.0",
     "source-map-support": "^0.5.21"
