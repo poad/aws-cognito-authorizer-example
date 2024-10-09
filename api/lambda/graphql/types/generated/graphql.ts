@@ -106,8 +106,8 @@ export type SubscriptionResolver<
   TArgs = {},
 > =
   | ((
-      ...args: any[]
-    ) => SubscriptionObject<TResult, TKey, TParent, TContext, TArgs>)
+    ...args: any[]
+  ) => SubscriptionObject<TResult, TKey, TParent, TContext, TArgs>)
   | SubscriptionObject<TResult, TKey, TParent, TContext, TArgs>;
 
 export type TypeResolveFn<TTypes, TParent = {}, TContext = {}> = (
@@ -156,7 +156,7 @@ export type ResolversParentTypes = {
 export type GitHubResolvers<
   ContextType = any,
   ParentType extends
-    ResolversParentTypes['GitHub'] = ResolversParentTypes['GitHub'],
+  ResolversParentTypes['GitHub'] = ResolversParentTypes['GitHub'],
 > = {
   username?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -165,7 +165,7 @@ export type GitHubResolvers<
 export type QueryResolvers<
   ContextType = any,
   ParentType extends
-    ResolversParentTypes['Query'] = ResolversParentTypes['Query'],
+  ResolversParentTypes['Query'] = ResolversParentTypes['Query'],
 > = {
   email?: Resolver<Maybe<ResolversTypes['String']>, ParentType, ContextType>;
   github?: Resolver<Maybe<ResolversTypes['GitHub']>, ParentType, ContextType>;

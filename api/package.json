@@ -7,18 +7,14 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "eslint-check": "eslint './{lambda,bin,lib}/**/*.{ts,js,tsx,jsx}'",
-    "eslint-fix": "eslint --fix './{lambda,bin,lib}/**/*.{ts,js,tsx,jsx}'",
-    "prettier-check": "prettier --check lambda bin lib",
-    "prettier-format": "prettier --write lambda bin lib",
-    "lint": "pnpm prettier-check && pnpm eslint-check",
-    "lint-fix": "pnpm prettier-format && pnpm eslint-fix",
+    "lint": "eslint './{lambda,bin,lib}/**/*.{ts,js,tsx,jsx}'",
+    "lint-fix": "eslint --fix './{lambda,bin,lib}/**/*.{ts,js,tsx,jsx}'",
     "generate": "graphql-codegen --config codegen.yml"
   },
   "devDependencies": {
     "@apollo/server": "^4.11.0",
     "@as-integrations/aws-lambda": "^3.1.0",
-    "@aws-sdk/client-cognito-identity-provider": "^3.666.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.667.0",
     "@graphql-codegen/cli": "^5.0.3",
     "@graphql-codegen/introspection": "^4.0.3",
     "@graphql-codegen/jsdoc": "^3.0.0",
@@ -36,7 +32,7 @@
     "graphql": "^16.9.0",
     "graphql-codegen-typescript-validation-schema": "^0.16.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.2",
+    "typescript": "^5.6.3",
     "yup": "^1.4.0"
   },
   "dependencies": {

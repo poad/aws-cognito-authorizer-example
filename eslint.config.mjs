@@ -1,3 +1,6 @@
+import stylistic from '@stylistic/eslint-plugin';
+import stylisticTs from '@stylistic/eslint-plugin-ts';
+import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import nextPlugin from '@next/eslint-plugin-next';
 import reactPlugin from 'eslint-plugin-react';
 import hooksPlugin from 'eslint-plugin-react-hooks';
@@ -31,6 +34,9 @@ export default [
       react: reactPlugin,
       'react-hooks': hooksPlugin,
       '@next/next': nextPlugin,
+      '@stylistic': stylistic,
+      '@stylistic/ts': stylisticTs,
+      '@stylistic/jsx': stylisticJsx,
     },
     rules: {
       ...reactPlugin.configs['jsx-runtime'].rules,
@@ -41,6 +47,9 @@ export default [
       '@next/next/no-img-element': 'error',
       '@next/next/no-page-custom-font': 'off',
       'no-html-link-for-pages': 'off',
+      '@stylistic/semi': 'error',
+      '@stylistic/ts/indent': ['error', 2],
+      '@stylistic/jsx/jsx-indent': ['error', 2],
     },
   },
   {
