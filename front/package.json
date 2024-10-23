@@ -12,21 +12,21 @@
   },
   "dependencies": {
     "@apollo/client": "^3.11.8",
-    "@aws-amplify/core": "^6.4.5",
-    "@aws-amplify/ui-react": "^6.5.4",
+    "@aws-amplify/core": "^6.4.6",
+    "@aws-amplify/ui-react": "^6.5.5",
     "@graphql-tools/load-files": "^7.0.0",
     "@graphql-tools/merge": "^9.0.8",
     "@graphql-tools/schema": "^10.0.7",
     "@graphql-yoga/node": "^3.9.1",
     "amazon-cognito-identity-js": "^6.3.12",
-    "aws-amplify": "^6.6.5",
+    "aws-amplify": "^6.6.6",
     "graphql": "^16.9.0",
     "graphql-tag": "^2.12.6",
-    "next": "^15.0.0",
+    "next": "^15.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "source-map-support": "^0.5.21",
-    "web-vitals": "^4.2.3"
+    "web-vitals": "^4.2.4"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.3",
@@ -34,8 +34,8 @@
     "@graphql-codegen/typescript": "^4.1.0",
     "@graphql-codegen/typescript-apollo-client-helpers": "^3.0.0",
     "@graphql-codegen/typescript-react-apollo": "^4.3.2",
-    "@types/node": "^22.7.6",
-    "@types/react": "^18.3.11",
+    "@types/node": "^22.7.9",
+    "@types/react": "^18.3.12",
     "next-transpile-modules": "^10.0.1",
     "typescript": "^5.6.3",
     "yup": "^1.4.0"
