@@ -13,14 +13,14 @@
   "dependencies": {
     "@apollo/client": "^3.12.3",
     "@aws-amplify/core": "^6.7.3",
-    "@aws-amplify/ui-react": "^6.7.1",
+    "@aws-amplify/ui-react": "^6.7.2",
     "@graphql-tools/load-files": "^7.0.0",
-    "@graphql-tools/merge": "^9.0.12",
-    "@graphql-tools/schema": "^10.0.11",
+    "@graphql-tools/merge": "^9.0.14",
+    "@graphql-tools/schema": "^10.0.13",
     "@graphql-yoga/node": "^3.9.1",
     "amazon-cognito-identity-js": "^6.3.12",
     "aws-amplify": "^6.10.3",
-    "graphql": "^16.9.0",
+    "graphql": "^16.10.0",
     "graphql-tag": "^2.12.6",
     "next": "^15.1.0",
     "react": "^18.3.1",
@@ -35,10 +35,10 @@
     "@graphql-codegen/typescript-apollo-client-helpers": "^3.0.0",
     "@graphql-codegen/typescript-react-apollo": "^4.3.2",
     "@types/node": "^22.10.2",
-    "@types/react": "^18.3.16",
+    "@types/react": "^18.3.17",
     "next-transpile-modules": "^10.0.1",
     "typescript": "^5.7.2",
-    "yup": "^1.5.0"
+    "yup": "^1.6.0"
   },
   "engines": {
     "npm": "use pnpm please!",
