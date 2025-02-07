@@ -11,7 +11,7 @@
     "generate": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
-    "@apollo/client": "^3.12.9",
+    "@apollo/client": "^3.12.10",
     "@aws-amplify/core": "^6.9.3",
     "@aws-amplify/ui-react": "^6.9.1",
     "@graphql-tools/load-files": "^7.0.1",
