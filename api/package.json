@@ -28,7 +28,7 @@
     "@types/aws-lambda": "^8.10.147",
     "@types/node": "^22.13.5",
     "@types/source-map-support": "^0.5.10",
-    "aws-cdk": "^2.1000.2",
+    "aws-cdk": "^2.1000.3",
     "aws-lambda": "^1.0.7",
     "esbuild": "^0.25.0",
     "graphql": "^16.10.0",
@@ -38,7 +38,7 @@
     "yup": "^1.6.1"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^2.14.0",
+    "@aws-lambda-powertools/logger": "^2.15.0",
     "aws-cdk-lib": "^2.180.0",
     "constructs": "^10.4.2",
     "source-map-support": "^0.5.21"
