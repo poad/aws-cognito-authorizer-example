@@ -39,7 +39,7 @@
     "@types/react": "^18.3.24",
     "next-transpile-modules": "^10.0.1",
     "typescript": "^5.9.2",
-    "yup": "^1.7.0"
+    "yup": "^1.7.1"
   },
   "engines": {
     "npm": "use pnpm please!",
