@@ -38,7 +38,7 @@
     "yup": "^1.7.1"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^2.26.1",
+    "@aws-lambda-powertools/logger": "^2.27.0",
     "aws-cdk-lib": "^2.216.0",
     "constructs": "^10.4.2",
     "source-map-support": "^0.5.21"
