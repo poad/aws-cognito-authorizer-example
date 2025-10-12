@@ -18,10 +18,13 @@ const useSession = (): Session | undefined => {
   const [session, setSession] = useState<AuthSession>();
 
   useEffect(() => {
-    fetchAuthSession().then((it) => {
-      setSession(it);
-      localStorage.setItem('token', it.tokens?.idToken?.toString() ?? '');
-    });
+    // eslint-disable-next-line promise/catch-or-return
+    fetchAuthSession()
+      .then((it) => {
+        setSession(it);
+        // eslint-disable-next-line promise/always-return
+        localStorage.setItem('token', it.tokens?.idToken?.toString() ?? '');
+      });
   }, []);
 
   if (session) {

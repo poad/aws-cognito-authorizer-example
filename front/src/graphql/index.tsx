@@ -1,7 +1,7 @@
 'use client';
 
 import { useQuery } from '@apollo/client';
-import gql from 'graphql-tag';
+import { gql } from 'graphql-tag';
 import Status from '../fetch/components/status';
 
 const GraphQLFetch = () => {

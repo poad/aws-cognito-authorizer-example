@@ -35,7 +35,7 @@
     "@graphql-codegen/typescript-apollo-client-helpers": "^3.0.1",
     "@graphql-codegen/typescript-react-apollo": "^4.3.3",
     "@next/eslint-plugin-next": "^15.5.4",
-    "@types/node": "^22.18.9",
+    "@types/node": "^22.18.10",
     "@types/react": "^18.3.26",
     "next-transpile-modules": "^10.0.1",
     "typescript": "^5.9.3",

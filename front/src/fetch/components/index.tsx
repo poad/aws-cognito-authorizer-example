@@ -5,7 +5,7 @@ import Status from './status';
 const entpoint = process.env.NEXT_PUBLIC_REST_API_ENDPOINT_URL;
 
 const Fetch = ({ label, token }: { label: string; token?: string }) => {
-  const fetcher = useFetcher(entpoint!, 'POST');
+  const fetcher = useFetcher(entpoint || '', 'POST');
   const [status, setStatus] = useState<boolean | undefined>();
   const [contet, setContent] = useState<string>('');
 
@@ -19,6 +19,7 @@ const Fetch = ({ label, token }: { label: string; token?: string }) => {
         onClick={() =>
           fetcher(token).then((res) => {
             setStatus(!res.error);
+            // eslint-disable-next-line promise/always-return
             setContent(res.content ? JSON.stringify(res.content) : '');
           })
         }

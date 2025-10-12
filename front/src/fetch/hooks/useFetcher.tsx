@@ -1,4 +1,4 @@
-type FetchResponse = {
+interface FetchResponse {
   error?: {
     http?: {
       status: number;
@@ -8,14 +8,14 @@ type FetchResponse = {
     network: boolean;
   };
   content?: unknown;
-};
+}
 
 type Fetcher = (token: string) => Promise<FetchResponse>;
 
 const useFetcher = (
   url: string,
   method: string,
-  headers?: { [key: string]: string },
+  headers?: Record<string, string>,
   body?: string
 ): Fetcher => {
   const fetcher = async (token: string): Promise<FetchResponse> => {

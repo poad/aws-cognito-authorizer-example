@@ -10,6 +10,7 @@ const useAuth = () => {
 
   useEffect(() => {
     fetchAuthSession()
+      // eslint-disable-next-line promise/always-return
       .then((session) => {
         setCredentials(session.credentials);
         setTokens(session.tokens);
