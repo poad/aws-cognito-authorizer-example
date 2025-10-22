@@ -18,18 +18,13 @@
     "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-react-refresh": "^0.4.24",
     "jiti": "^2.6.1",
-    "pnpm": "^10.18.3",
-    "typescript-eslint": "^8.46.1"
+    "pnpm": "^10.19.0",
+    "typescript-eslint": "^8.46.2"
   },
   "scripts": {
     "lint": "pnpm -r --if-present lint",
     "lint-fix": "pnpm -r --if-present lint-fix",
     "build": "pnpm -r --if-present build"
   },
-  "pnpm": {
-    "overrides": {
-      "ws": ">=8.17.1"
-    }
-  },
-  "packageManager": "pnpm@10.18.3"
+  "packageManager": "pnpm@10.19.0"
 }

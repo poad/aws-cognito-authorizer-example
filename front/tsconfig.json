@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
@@ -58,6 +58,7 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/aws-exports.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ]
 }

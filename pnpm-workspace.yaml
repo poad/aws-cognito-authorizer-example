@@ -11,3 +11,8 @@ strictPeerDependencies: false
 
 legacyPeerDeps: true
 autoInstallPeers: true
+
+overrides: 
+  "@types/react": "19.2.2"
+  "@types/react-dom": "19.2.2"
+  ws: ">=8.17.1"
