@@ -2,12 +2,12 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "@eslint/compat": "^1.4.0",
+    "@eslint/compat": "^1.4.1",
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.38.0",
+    "@eslint/js": "^9.39.1",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@stylistic/eslint-plugin": "^5.5.0",
-    "eslint": "^9.38.0",
+    "eslint": "^9.39.1",
     "eslint-config-next": "^15.5.6",
     "eslint-import-resolver-typescript": "^3.10.1",
     "eslint-plugin-flowtype": "^8.0.3",
@@ -15,16 +15,16 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "jiti": "^2.6.1",
-    "pnpm": "^10.19.0",
-    "typescript-eslint": "^8.46.2"
+    "pnpm": "^10.20.0",
+    "typescript-eslint": "^8.46.3"
   },
   "scripts": {
     "lint": "pnpm -r --if-present lint",
     "lint-fix": "pnpm -r --if-present lint-fix",
     "build": "pnpm -r --if-present build"
   },
-  "packageManager": "pnpm@10.19.0"
+  "packageManager": "pnpm@10.20.0"
 }
