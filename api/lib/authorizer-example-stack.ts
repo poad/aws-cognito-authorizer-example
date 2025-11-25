@@ -300,7 +300,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
       this,
       'AuthorizerExampleLambdaGraphQLFunction',
       {
-        runtime: Runtime.NODEJS_22_X,
+        runtime: Runtime.NODEJS_24_X,
         entry: './lambda/graphql/index.ts',
         functionName: graphqlFunctionName,
         retryAttempts: 0,
