@@ -3,10 +3,14 @@
 import { JSX, ReactNode } from 'react';
 import {
   ApolloClient,
-  createHttpLink,
   InMemoryCache,
-  ApolloProvider,
 } from '@apollo/client';
+import {
+  HttpLink
+} from '@apollo/client/link/http';
+import {
+  ApolloProvider,
+} from '@apollo/client/react';
 import { setContext } from '@apollo/client/link/context';
 import awsconfig from '../aws-config';
 import { Amplify } from 'aws-amplify';
@@ -21,7 +25,7 @@ interface LayoutProps {
 }
 
 const entpoint = process.env.NEXT_PUBLIC_GRAPHQL_API_ENDPOINT_URL;
-const httpLink = createHttpLink({
+const httpLink = new HttpLink({
   uri: entpoint,
 });
 

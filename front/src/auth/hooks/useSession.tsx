@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { fetchAuthSession } from '@aws-amplify/core';
-import { AuthSession } from '@aws-amplify/core/dist/esm/singleton/Auth/types';
+import { AuthSession } from '@aws-amplify/core';
 
 export interface Session {
   idToken: {
