@@ -26,5 +26,5 @@
     "lint-fix": "pnpm -r --if-present lint-fix",
     "build": "pnpm -r --if-present build"
   },
-  "packageManager": "pnpm@10.25.0"
+  "packageManager": "pnpm@10.27.0"
 }
