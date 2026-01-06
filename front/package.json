@@ -33,7 +33,7 @@
     "@graphql-codegen/typed-document-node": "^6.1.5",
     "@graphql-codegen/typescript": "^5.0.7",
     "@graphql-codegen/typescript-apollo-client-helpers": "^3.0.1",
-    "@graphql-codegen/typescript-react-apollo": "^4.3.4",
+    "@graphql-codegen/typescript-react-apollo": "^4.4.0",
     "@next/eslint-plugin-next": "^16.1.1",
     "@types/node": "^24.10.4",
     "@types/react": "^19.2.7",
