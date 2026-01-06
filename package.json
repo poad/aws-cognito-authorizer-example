@@ -19,7 +19,7 @@
     "eslint-plugin-react-refresh": "^0.4.26",
     "jiti": "^2.6.1",
     "pnpm": "^10.27.0",
-    "typescript-eslint": "^8.51.0"
+    "typescript-eslint": "^8.52.0"
   },
   "scripts": {
     "lint": "pnpm -r --if-present lint",
