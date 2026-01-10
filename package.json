@@ -6,7 +6,7 @@
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.2",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
-    "@stylistic/eslint-plugin": "^5.6.1",
+    "@stylistic/eslint-plugin": "^5.7.0",
     "eslint": "^9.39.2",
     "eslint-config-next": "^15.5.9",
     "eslint-import-resolver-typescript": "^3.10.1",
@@ -18,7 +18,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.26",
     "jiti": "^2.6.1",
-    "pnpm": "^10.27.0",
+    "pnpm": "^10.28.0",
     "typescript-eslint": "^8.52.0"
   },
   "scripts": {
@@ -26,5 +26,5 @@
     "lint-fix": "pnpm -r --if-present lint-fix",
     "build": "pnpm -r --if-present build"
   },
-  "packageManager": "pnpm@10.27.0"
+  "packageManager": "pnpm@10.28.0"
 }
