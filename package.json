@@ -18,7 +18,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.0",
     "jiti": "^2.6.1",
-    "pnpm": "^10.28.2",
+    "pnpm": "^10.29.1",
     "typescript-eslint": "^8.54.0"
   },
   "scripts": {
@@ -26,5 +26,5 @@
     "lint-fix": "pnpm -r --if-present lint-fix",
     "build": "pnpm -r --if-present build"
   },
-  "packageManager": "pnpm@10.28.2"
+  "packageManager": "pnpm@10.29.1"
 }
