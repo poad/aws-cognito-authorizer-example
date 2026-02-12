@@ -26,7 +26,7 @@ importers:
         version: 10.0.1(eslint@10.0.0(jiti@2.6.1))
       '@graphql-eslint/eslint-plugin':
         specifier: ^4.4.0
-        version: 4.4.0(eslint@10.0.0(jiti@2.6.1))(graphql@16.12.0)(typescript@5.9.3)
+        version: 4.4.0(@types/node@25.2.3)(eslint@10.0.0(jiti@2.6.1))(graphql@16.12.0)(typescript@5.9.3)
       '@stylistic/eslint-plugin':
         specifier: ^5.8.0
         version: 5.8.0(eslint@10.0.0(jiti@2.6.1))
@@ -131,8 +131,8 @@ importers:
         specifier: ^0.5.10
         version: 0.5.10
       aws-cdk:
-        specifier: ^2.1105.0
-        version: 2.1105.0
+        specifier: ^2.1106.0
+        version: 2.1106.0
       aws-lambda:
         specifier: ^1.0.7
         version: 1.0.7
@@ -228,10 +228,10 @@ importers:
         specifier: ^25.2.3
         version: 25.2.3
       '@types/react':
-        specifier: ^19.2.2
+        specifier: ^19.2.14
         version: 19.2.14
       '@types/react-dom':
-        specifier: ^19.2.2
+        specifier: ^19.2.3
         version: 19.2.3(@types/react@19.2.14)
       next-transpile-modules:
         specifier: ^10.0.1
@@ -398,8 +398,8 @@ packages:
   '@aws-amplify/data-schema-types@1.2.1':
     resolution: {integrity: sha512-SuYVcy9Hg8Ox9P0QCXEPwqHxX5zVPgVo2YvNBOm5TpkZr4UK6ir3USame7dELZsk5/9f6KoP70QAYhTvp/j1Og==}
 
-  '@aws-amplify/data-schema@1.23.0':
-    resolution: {integrity: sha512-lMXgb1DADs4sJT8bU5XwU25h36dXVvkHbmzr/mGkuBZoTO/vkihEajMDiDholkInOZzipU8IrvWQCI4N5HbRNA==}
+  '@aws-amplify/data-schema@1.24.0':
+    resolution: {integrity: sha512-nly/+w3R2JIq6qxsw7io2nGxliSswBO9FQqzckpTnpUAd+oMe06HoTyDvQG6hxozQc9Woy0tT375WIJp4C84Uw==}
 
   '@aws-amplify/datastore@5.1.5':
     resolution: {integrity: sha512-/9o4eYqWOlxVxe/riDd282FmUHHSiGUEAwle464T8wzNSqPTB7yTeQfzt2LFYTWsrYLCSR0OtOM1bY5VPSVmew==}
@@ -897,8 +897,8 @@ packages:
   '@envelop/core@3.0.6':
     resolution: {integrity: sha512-06t1xCPXq6QFN7W1JUEf68aCwYN0OUDNAIoJe7bAqhaoa2vn7NCcuX1VHkJ/OWpmElUgCsRO6RiBbIru1in0Ig==}
 
-  '@envelop/core@5.5.0':
-    resolution: {integrity: sha512-nsU1EyJQAStaKHR1ZkB/ug9XBm+WPTliYtdedbJ/L1ykrp7dbbn0srqBeDnZ2mbZVp4hH3d0Fy+Og9OgPWZx+g==}
+  '@envelop/core@5.5.1':
+    resolution: {integrity: sha512-3DQg8sFskDo386TkL5j12jyRAdip/8yzK3x7YGbZBgobZ4aKXrvDU0GppU0SnmrpQnNaiTUsxBs9LKkwQ/eyvw==}
     engines: {node: '>=18.0.0'}
 
   '@envelop/instrumentation@1.0.0':
@@ -2954,8 +2954,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.1105.0:
-    resolution: {integrity: sha512-1RY2UZJv31XYobEGFHQEb7c2HXNzDbHuHqdnfdYyygvZW4Nrm8MJCW42lqItQCn+wF52Ixc7r2VR5eR4YGtVhA==}
+  aws-cdk@2.1106.0:
+    resolution: {integrity: sha512-1tyQNnuCnH3nc0QpOL84UNhr+y73fyS75nwSnuy5z7XtRwdsOuqyqcDxd6tvCXkUBA7fdgu8p1FR3hkqrW0GWA==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
@@ -4181,8 +4181,8 @@ packages:
   lower-case@2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
 
-  lru-cache@11.2.5:
-    resolution: {integrity: sha512-vFrFJkWtJvJnD5hg+hJvVE8Lh/TcMzKnTgCWmtBipwI5yLX/iX+5UB2tfuyODF5E7k9xEzMdYgGqaSb1c0c5Yw==}
+  lru-cache@11.2.6:
+    resolution: {integrity: sha512-ESL2CrkS/2wTPfuend7Zhkzo2u0daGJ/A2VucJOgQ/C48S/zB8MMeMHSGKYpXhIjbPxfuezITkaBH1wqv00DDQ==}
     engines: {node: 20 || >=22}
 
   lru-cache@5.1.1:
@@ -4525,8 +4525,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  qs@6.14.1:
-    resolution: {integrity: sha512-4EK3+xJl8Ts67nLYNwqw/dsFVnCf+qR7RgXSK9jEEm9unao3njwMDdmsdvoKBKHzxd7tCYz5e5M+SnMjdtXGQQ==}
+  qs@6.14.2:
+    resolution: {integrity: sha512-V/yCWTTF7VJ9hIh18Ugr2zhJMP01MY7c5kh4J870L7imm6/DIzBsNLTXzMwUA3yZ5b/KBqLx8Kp3uRvd7xSe3Q==}
     engines: {node: '>=0.6'}
 
   querystring@0.2.0:
@@ -5337,7 +5337,7 @@ snapshots:
       finalhandler: 2.1.1
       graphql: 16.12.0
       loglevel: 1.9.2
-      lru-cache: 11.2.5
+      lru-cache: 11.2.6
       negotiator: 1.0.0
       uuid: 11.1.0
       whatwg-mimetype: 4.0.0
@@ -5364,7 +5364,7 @@ snapshots:
   '@apollo/utils.keyvaluecache@4.0.0':
     dependencies:
       '@apollo/utils.logger': 3.0.0
-      lru-cache: 11.2.5
+      lru-cache: 11.2.6
 
   '@apollo/utils.logger@3.0.0': {}
 
@@ -5457,7 +5457,7 @@ snapshots:
     dependencies:
       '@aws-amplify/api-rest': 4.6.3(@aws-amplify/core@6.16.1)
       '@aws-amplify/core': 6.16.1
-      '@aws-amplify/data-schema': 1.23.0
+      '@aws-amplify/data-schema': 1.24.0
       '@aws-sdk/types': 3.973.1
       graphql: 15.8.0
       rxjs: 7.8.2
@@ -5474,7 +5474,7 @@ snapshots:
       '@aws-amplify/api-graphql': 4.8.5
       '@aws-amplify/api-rest': 4.6.3(@aws-amplify/core@6.16.1)
       '@aws-amplify/core': 6.16.1
-      '@aws-amplify/data-schema': 1.23.0
+      '@aws-amplify/data-schema': 1.24.0
       rxjs: 7.8.2
       tslib: 2.8.1
 
@@ -5501,7 +5501,7 @@ snapshots:
       graphql: 15.8.0
       rxjs: 7.8.2
 
-  '@aws-amplify/data-schema@1.23.0':
+  '@aws-amplify/data-schema@1.24.0':
     dependencies:
       '@aws-amplify/data-schema-types': 1.2.1
       '@smithy/util-base64': 3.0.0
@@ -6480,7 +6480,7 @@ snapshots:
       '@envelop/types': 3.0.2
       tslib: 2.8.1
 
-  '@envelop/core@5.5.0':
+  '@envelop/core@5.5.1':
     dependencies:
       '@envelop/instrumentation': 1.0.0
       '@envelop/types': 5.2.1
@@ -6907,7 +6907,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@graphql-eslint/eslint-plugin@4.4.0(eslint@10.0.0(jiti@2.6.1))(graphql@16.12.0)(typescript@5.9.3)':
+  '@graphql-eslint/eslint-plugin@4.4.0(@types/node@25.2.3)(eslint@10.0.0(jiti@2.6.1))(graphql@16.12.0)(typescript@5.9.3)':
     dependencies:
       '@graphql-tools/code-file-loader': 8.1.28(graphql@16.12.0)
       '@graphql-tools/graphql-tag-pluck': 8.3.27(graphql@16.12.0)
@@ -7001,19 +7001,19 @@ snapshots:
 
   '@graphql-tools/executor-common@0.0.4(graphql@16.12.0)':
     dependencies:
-      '@envelop/core': 5.5.0
+      '@envelop/core': 5.5.1
       '@graphql-tools/utils': 10.11.0(graphql@16.12.0)
       graphql: 16.12.0
 
   '@graphql-tools/executor-common@0.0.6(graphql@16.12.0)':
     dependencies:
-      '@envelop/core': 5.5.0
+      '@envelop/core': 5.5.1
       '@graphql-tools/utils': 10.11.0(graphql@16.12.0)
       graphql: 16.12.0
 
   '@graphql-tools/executor-common@1.0.6(graphql@16.12.0)':
     dependencies:
-      '@envelop/core': 5.5.0
+      '@envelop/core': 5.5.1
       '@graphql-tools/utils': 11.0.0(graphql@16.12.0)
       graphql: 16.12.0
 
@@ -7213,7 +7213,7 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@16.12.0)':
     dependencies:
       graphql: 16.12.0
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   '@graphql-tools/relay-operation-optimizer@6.5.18(graphql@16.12.0)':
     dependencies:
@@ -7230,7 +7230,7 @@ snapshots:
       '@ardatan/relay-compiler': 12.0.3(graphql@16.12.0)
       '@graphql-tools/utils': 11.0.0(graphql@16.12.0)
       graphql: 16.12.0
-      tslib: 2.8.1
+      tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
 
@@ -8802,7 +8802,7 @@ snapshots:
       '@aws-cdk/cloud-assembly-schema': 48.20.0
       constructs: 10.4.5
 
-  aws-cdk@2.1105.0: {}
+  aws-cdk@2.1106.0: {}
 
   aws-lambda@1.0.7:
     dependencies:
@@ -8877,7 +8877,7 @@ snapshots:
       http-errors: 2.0.1
       iconv-lite: 0.7.2
       on-finished: 2.4.1
-      qs: 6.14.1
+      qs: 6.14.2
       raw-body: 3.0.2
       type-is: 2.0.1
     transitivePeerDependencies:
@@ -8946,7 +8946,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   camelcase@5.3.1: {}
 
@@ -8955,7 +8955,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
       upper-case-first: 2.0.2
 
   chalk@4.1.2:
@@ -8989,7 +8989,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   chardet@2.1.1: {}
 
@@ -9167,7 +9167,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   dset@3.1.4: {}
 
@@ -9952,7 +9952,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   hermes-estree@0.25.1: {}
 
@@ -10094,7 +10094,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   is-map@2.0.3: {}
 
@@ -10147,7 +10147,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   is-weakmap@2.0.2: {}
 
@@ -10302,13 +10302,13 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
-  lru-cache@11.2.5: {}
+  lru-cache@11.2.6: {}
 
   lru-cache@5.1.1:
     dependencies:
@@ -10404,7 +10404,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   node-domexception@1.0.0: {}
 
@@ -10525,7 +10525,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   parent-module@1.0.1:
     dependencies:
@@ -10549,12 +10549,12 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   path-exists@4.0.0: {}
 
@@ -10623,7 +10623,7 @@ snapshots:
       pngjs: 5.0.0
       yargs: 15.4.1
 
-  qs@6.14.1:
+  qs@6.14.2:
     dependencies:
       side-channel: 1.1.0
 
@@ -10787,7 +10787,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
       upper-case-first: 2.0.2
 
   set-blocking@2.0.0: {}
@@ -10906,7 +10906,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   source-map-js@1.2.1: {}
 
@@ -10919,7 +10919,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   sprintf-js@1.0.3: {}
 
@@ -11036,7 +11036,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   sync-fetch@0.6.0:
     dependencies:
@@ -11063,7 +11063,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   to-buffer@1.2.2:
     dependencies:
@@ -11233,11 +11233,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.8.1
+      tslib: 2.6.3
 
   uri-js@4.4.1:
     dependencies:
