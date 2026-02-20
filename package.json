@@ -10,7 +10,6 @@
     "eslint": "^10.0.0",
     "eslint-config-next": "^16.1.6",
     "eslint-import-resolver-typescript": "^4.4.4",
-    "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-promise": "^7.2.1",
@@ -26,5 +25,5 @@
     "lint-fix": "pnpm -r --if-present lint-fix",
     "build": "pnpm -r --if-present build"
   },
-  "packageManager": "pnpm@10.30.0"
+  "packageManager": "pnpm@10.30.1"
 }
