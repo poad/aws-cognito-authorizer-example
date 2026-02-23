@@ -30,7 +30,7 @@ importers:
         version: 10.0.1(eslint@10.0.1(jiti@2.6.1))
       '@graphql-eslint/eslint-plugin':
         specifier: ^4.4.0
-        version: 4.4.0(@types/node@25.3.0)(eslint@10.0.1(jiti@2.6.1))(graphql@16.12.0)(typescript@5.9.3)
+        version: 4.4.0(eslint@10.0.1(jiti@2.6.1))(graphql@16.12.0)(typescript@5.9.3)
       '@stylistic/eslint-plugin':
         specifier: ^5.9.0
         version: 5.9.0(eslint@10.0.1(jiti@2.6.1))
@@ -96,8 +96,8 @@ importers:
         specifier: ^3.995.0
         version: 3.995.0
       '@graphql-codegen/cli':
-        specifier: ^6.1.1
-        version: 6.1.1(@types/node@25.3.0)(graphql-sock@1.0.1(graphql@16.12.0))(graphql@16.12.0)(typescript@5.9.3)
+        specifier: ^6.1.2
+        version: 6.1.2(@types/node@25.3.0)(graphql-sock@1.0.1(graphql@16.12.0))(graphql@16.12.0)(typescript@5.9.3)
       '@graphql-codegen/introspection':
         specifier: ^5.0.0
         version: 5.0.0(graphql@16.12.0)
@@ -205,8 +205,8 @@ importers:
         version: 5.1.0
     devDependencies:
       '@graphql-codegen/cli':
-        specifier: ^6.1.1
-        version: 6.1.1(@types/node@25.3.0)(graphql-sock@1.0.1(graphql@16.12.0))(graphql@16.12.0)(typescript@5.9.3)
+        specifier: ^6.1.2
+        version: 6.1.2(@types/node@25.3.0)(graphql-sock@1.0.1(graphql@16.12.0))(graphql@16.12.0)(typescript@5.9.3)
       '@graphql-codegen/typed-document-node':
         specifier: ^6.1.6
         version: 6.1.6(graphql@16.12.0)
@@ -1148,8 +1148,8 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
 
-  '@graphql-codegen/cli@6.1.1':
-    resolution: {integrity: sha512-Ni8UdZ6D/UTvLvDtPb6PzshI0lTqtLDnmv/2t1w2SYP92H0MMEdAzxB/ujDWwIXm2LzVPvvrGvzzCTMsyXa+mA==}
+  '@graphql-codegen/cli@6.1.2':
+    resolution: {integrity: sha512-BQ49LF0jnQNL12rU1RucTemoX1bHx8slR4B11nOrp4k5NTojhcc1A1czzU5wXCK/1+ezNHrVGONWg3jxZUy08w==}
     engines: {node: '>=16'}
     hasBin: true
     peerDependencies:
@@ -6524,7 +6524,7 @@ snapshots:
       graphql: 16.12.0
       tslib: 2.6.3
 
-  '@graphql-codegen/cli@6.1.1(@types/node@25.3.0)(graphql-sock@1.0.1(graphql@16.12.0))(graphql@16.12.0)(typescript@5.9.3)':
+  '@graphql-codegen/cli@6.1.2(@types/node@25.3.0)(graphql-sock@1.0.1(graphql@16.12.0))(graphql@16.12.0)(typescript@5.9.3)':
     dependencies:
       '@babel/generator': 7.29.1
       '@babel/template': 7.28.6
@@ -6765,7 +6765,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@graphql-eslint/eslint-plugin@4.4.0(@types/node@25.3.0)(eslint@10.0.1(jiti@2.6.1))(graphql@16.12.0)(typescript@5.9.3)':
+  '@graphql-eslint/eslint-plugin@4.4.0(eslint@10.0.1(jiti@2.6.1))(graphql@16.12.0)(typescript@5.9.3)':
     dependencies:
       '@graphql-tools/code-file-loader': 8.1.28(graphql@16.12.0)
       '@graphql-tools/graphql-tag-pluck': 8.3.27(graphql@16.12.0)
@@ -7071,7 +7071,7 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@16.12.0)':
     dependencies:
       graphql: 16.12.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/relay-operation-optimizer@6.5.18(graphql@16.12.0)':
     dependencies:
@@ -7088,7 +7088,7 @@ snapshots:
       '@ardatan/relay-compiler': 12.0.3(graphql@16.12.0)
       '@graphql-tools/utils': 11.0.0(graphql@16.12.0)
       graphql: 16.12.0
-      tslib: 2.6.3
+      tslib: 2.8.1
     transitivePeerDependencies:
       - encoding
 
@@ -8750,7 +8750,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   camelcase@5.3.1: {}
 
@@ -8759,7 +8759,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   chalk@4.1.2:
@@ -8793,7 +8793,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   chardet@2.1.1: {}
 
@@ -8963,7 +8963,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   dset@3.1.4: {}
 
@@ -9737,7 +9737,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   hermes-estree@0.25.1: {}
 
@@ -9872,7 +9872,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-map@2.0.3: {}
 
@@ -9925,7 +9925,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   is-weakmap@2.0.2: {}
 
@@ -10073,11 +10073,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   lru-cache@11.2.6: {}
 
@@ -10293,7 +10293,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   parent-module@1.0.1:
     dependencies:
@@ -10317,12 +10317,12 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   path-exists@4.0.0: {}
 
@@ -10552,7 +10552,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
       upper-case-first: 2.0.2
 
   set-blocking@2.0.0: {}
@@ -10671,7 +10671,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   source-map-js@1.2.1: {}
 
@@ -10684,7 +10684,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   stable-hash-x@0.2.0: {}
 
@@ -10797,7 +10797,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   sync-fetch@0.6.0:
     dependencies:
@@ -10824,7 +10824,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   to-buffer@1.2.2:
     dependencies:
@@ -10983,11 +10983,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   uri-js@4.4.1:
     dependencies:
