@@ -13,7 +13,7 @@
   "dependencies": {
     "@apollo/client": "^4.1.6",
     "@aws-amplify/core": "^6.16.1",
-    "@aws-amplify/ui-react": "^6.15.0",
+    "@aws-amplify/ui-react": "^6.15.1",
     "@graphql-tools/load-files": "^7.0.1",
     "@graphql-tools/merge": "^9.1.7",
     "@graphql-tools/schema": "^10.0.31",
@@ -35,7 +35,7 @@
     "@graphql-codegen/typescript-apollo-client-helpers": "^3.0.1",
     "@graphql-codegen/typescript-react-apollo": "^4.4.0",
     "@next/eslint-plugin-next": "^16.1.6",
-    "@types/node": "^25.3.1",
+    "@types/node": "^25.3.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "next-transpile-modules": "^10.0.1",
