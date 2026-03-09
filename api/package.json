@@ -28,7 +28,7 @@
     "@types/aws-lambda": "^8.10.161",
     "@types/node": "^25.3.5",
     "@types/source-map-support": "^0.5.10",
-    "aws-cdk": "^2.1109.0",
+    "aws-cdk": "^2.1110.0",
     "esbuild": "^0.27.3",
     "graphql": "^16.13.1",
     "graphql-codegen-typescript-validation-schema": "^0.18.1",
