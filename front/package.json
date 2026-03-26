@@ -26,7 +26,7 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "source-map-support": "^0.5.21",
-    "web-vitals": "^5.1.0"
+    "web-vitals": "^5.2.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^6.2.1",
