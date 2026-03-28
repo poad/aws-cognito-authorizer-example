@@ -6,8 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint './src/**/*.{ts,js,tsx,jsx}'",
-    "lint-fix": "eslint --fix './src/**/*.{ts,js,tsx,jsx}'",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix",
     "generate": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
