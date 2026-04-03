@@ -1,14 +1,15 @@
 import { defineConfig } from 'eslint/config';
 import stylistic from '@stylistic/eslint-plugin';
 import importPlugin from 'eslint-plugin-import-x';
+// @ts-expect-error ignore type error
 import pluginPromise from 'eslint-plugin-promise';
 import { configs, parser } from 'typescript-eslint';
 import * as graphqlPlugin from '@graphql-eslint/eslint-plugin';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
 import { includeIgnoreFile } from '@eslint/compat';
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

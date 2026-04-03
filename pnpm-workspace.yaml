@@ -2,16 +2,16 @@ packages:
   - ./api
   - ./front
 
-autoInstallPeers: true
-
-enablePrePostScripts: true
-
-engineStrict: true
-
-legacyPeerDeps: true
+minimumReleaseAge: 10080 # 7 days in minutes
+minimumReleaseAgeExclude:
+  - lodash@4.18.1
+  - lodash-es@4.18.1
 
 overrides:
-  fast-xml-parser@>=4.0.0-beta.3 <=5.5.5: '>=5.5.6'
-  immutable@<4.3.8: '>=4.3.8'
+  chokidar: '>=5'
+  eslint-import-resolver-typescript: '>=4'
+  lodash@<=4.17.23: '>=4.18.0'
+  lodash@>=4.0.0 <=4.17.23: '>=4.18.0'
+  semver: '>=7'
 
-strictPeerDependencies: false
+trustPolicy: no-downgrade

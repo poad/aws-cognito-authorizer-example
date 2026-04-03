@@ -9,8 +9,7 @@ import {
   Callback,
   Context,
 } from 'aws-lambda';
-import schemaWithResolvers from './schema';
-import 'source-map-support/register';
+import schemaWithResolvers from './schema.js';
 
 const schema = schemaWithResolvers;
 const server = new ApolloServer({

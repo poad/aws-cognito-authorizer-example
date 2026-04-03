@@ -3,7 +3,7 @@ import {
   CognitoIdentityProviderClient,
   AdminGetUserCommand,
 } from '@aws-sdk/client-cognito-identity-provider';
-import { Resolvers } from '../types/generated/graphql';
+import { Resolvers } from '../types/generated/graphql.js';
 import { Logger } from '@aws-lambda-powertools/logger';
 
 const logger = new Logger();

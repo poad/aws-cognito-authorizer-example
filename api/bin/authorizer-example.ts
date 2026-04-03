@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { AuthorizerExampleStack } from '../lib/authorizer-example-stack';
+import { AuthorizerExampleStack } from '../lib/authorizer-example-stack.js';
 
 const app = new cdk.App();
 const environment = app.node.tryGetContext('env');
