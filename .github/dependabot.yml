@@ -17,7 +17,10 @@ updates:
           - "*"
 
   - package-ecosystem: npm
-    directory: '/'
+    directories:
+      - '/'
+      - /api/'
+      - '/front/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo
@@ -25,6 +28,10 @@ updates:
     allow:
       - dependency-type: all
     rebase-strategy: auto
+    cooldown:
+      default-days: 7
+      exclude:
+        - 'pnpm'
     assignees:
       - poad
     groups:
@@ -34,35 +41,3 @@ updates:
     ignore:
       - dependency-name: "@types/node"
         versions: ["25.*"]
-
-  - package-ecosystem: npm
-    directory: '/api/'
-    schedule:
-      interval: daily
-      timezone: Asia/Tokyo
-      time: "12:00"
-    allow:
-      - dependency-type: all
-    rebase-strategy: auto
-    assignees:
-      - poad
-    groups:
-      api:
-        patterns:
-          - "*"
-
-  - package-ecosystem: npm
-    directory: '/front/'
-    schedule:
-      interval: daily
-      timezone: Asia/Tokyo
-      time: "12:00"
-    allow:
-      - dependency-type: all
-    rebase-strategy: auto
-    assignees:
-      - poad
-    groups:
-      front:
-        patterns:
-          - "*"
