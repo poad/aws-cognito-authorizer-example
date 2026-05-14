@@ -8,7 +8,7 @@
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^10.3.0",
-    "eslint-config-next": "^16.2.4",
+    "eslint-config-next": "^16.2.5",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import-x": "^4.16.2",
     "eslint-plugin-promise": "^7.3.0",
@@ -20,5 +20,5 @@
     "lint-fix": "pnpm -r --if-present lint-fix",
     "build": "pnpm -r --if-present build"
   },
-  "packageManager": "pnpm@11.1.1"
+  "packageManager": "pnpm@11.1.2"
 }
