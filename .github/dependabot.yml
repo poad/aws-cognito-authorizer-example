@@ -8,6 +8,8 @@ updates:
       time: "12:00"
     allow:
       - dependency-type: all
+    cooldown:
+      default-days: 3
     rebase-strategy: auto
     assignees:
       - poad
@@ -30,8 +32,6 @@ updates:
     rebase-strategy: auto
     cooldown:
       default-days: 7
-      exclude:
-        - 'pnpm'
     assignees:
       - poad
     groups:
