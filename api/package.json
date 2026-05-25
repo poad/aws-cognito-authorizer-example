@@ -31,7 +31,7 @@
     "esbuild": "^0.27.7",
     "graphql": "^16.14.0",
     "graphql-codegen-typescript-validation-schema": "^0.18.1",
-    "tsx": "^4.22.1",
+    "tsx": "^4.22.2",
     "typescript": "^6.0.3",
     "yup": "^1.7.1"
   },
