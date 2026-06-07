@@ -15,7 +15,7 @@
   "devDependencies": {
     "@apollo/server": "^5.5.1",
     "@as-integrations/aws-lambda": "4.0.1",
-    "@aws-sdk/client-cognito-identity-provider": "^3.1049.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.1057.0",
     "@graphql-codegen/cli": "^6.3.1",
     "@graphql-codegen/introspection": "^5.0.2",
     "@graphql-codegen/jsdoc": "^4.0.1",
@@ -27,7 +27,7 @@
     "@graphql-tools/utils": "^11.1.0",
     "@types/aws-lambda": "^8.10.161",
     "@types/node": "^24.12.4",
-    "aws-cdk": "^2.1122.0",
+    "aws-cdk": "^2.1125.0",
     "esbuild": "^0.27.7",
     "graphql": "^16.14.0",
     "graphql-codegen-typescript-validation-schema": "^0.18.1",
@@ -36,8 +36,8 @@
     "yup": "^1.7.1"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^2.33.0",
-    "aws-cdk-lib": "^2.255.0",
+    "@aws-lambda-powertools/logger": "^2.33.1",
+    "aws-cdk-lib": "^2.257.0",
     "constructs": "^10.6.0"
   },
   "engines": {
