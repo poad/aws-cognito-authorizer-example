@@ -1,3 +1,4 @@
+import schemaWithResolvers from './schema.js';
 import { ApolloServer } from '@apollo/server';
 import {
   startServerAndCreateLambdaHandler,
@@ -9,7 +10,6 @@ import {
   Callback,
   Context,
 } from 'aws-lambda';
-import schemaWithResolvers from './schema.js';
 
 const schema = schemaWithResolvers;
 const server = new ApolloServer({
@@ -20,7 +20,7 @@ const server = new ApolloServer({
 export async function handler(
   event: APIGatewayProxyEvent,
   context: Context,
-  callback: Callback<APIGatewayProxyResult>
+  callback: Callback<APIGatewayProxyResult>,
 ) {
   const apolloHandler = startServerAndCreateLambdaHandler(
     server,
@@ -32,7 +32,7 @@ export async function handler(
           ...currentContext,
         },
       }),
-    }
+    },
   );
   const resp = await apolloHandler(event, context, callback);
   return {
