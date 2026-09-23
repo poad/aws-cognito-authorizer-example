@@ -45,7 +45,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
   constructor(
     scope: Construct,
     id: string,
-    props: AuthorizerExampleStackProps
+    props: AuthorizerExampleStackProps,
   ) {
     super(scope, id, props);
 
@@ -53,7 +53,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
 
     const userPoolDomain = ssm.StringParameter.valueForStringParameter(
       this,
-      `/${environment}/lambda-authorizer-example/UserPoolDomain`
+      `/${environment}/lambda-authorizer-example/UserPoolDomain`,
     );
 
     const userPool = new UserPool(this, 'UserPool', {
@@ -156,7 +156,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
               'cognito-identity.amazonaws.com:amr': 'unauthenticated',
             },
           },
-          'sts:AssumeRoleWithWebIdentity'
+          'sts:AssumeRoleWithWebIdentity',
         ),
         inlinePolicies: {
           'allow-assume-role': new PolicyDocument({
@@ -174,7 +174,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
             ],
           }),
         },
-      }
+      },
     );
 
     const authenticatedRole = new Role(
@@ -192,7 +192,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
               'cognito-identity.amazonaws.com:amr': 'authenticated',
             },
           },
-          'sts:AssumeRoleWithWebIdentity'
+          'sts:AssumeRoleWithWebIdentity',
         ),
         maxSessionDuration: Duration.hours(12),
         inlinePolicies: {
@@ -214,7 +214,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
             ],
           }),
         },
-      }
+      },
     );
 
      
@@ -234,7 +234,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
         logGroupName: `/aws/lambda/${restFunctionName}`,
         removalPolicy: RemovalPolicy.DESTROY,
         retention: RetentionDays.ONE_DAY,
-      }
+      },
     );
 
     const restFunction = new NodejsFunction(
@@ -280,9 +280,9 @@ export class AuthorizerExampleStack extends cdk.Stack {
                 ],
               }),
             },
-          }
+          },
         ),
-      }
+      },
     );
 
     const graphqlFunctionName = `${environment}-authorizer-example-api-gateway-graphql`;
@@ -293,7 +293,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
         logGroupName: `/aws/lambda/${graphqlFunctionName}`,
         removalPolicy: RemovalPolicy.DESTROY,
         retention: RetentionDays.ONE_DAY,
-      }
+      },
     );
 
     const graphqlFunction = new NodejsFunction(
@@ -353,9 +353,9 @@ export class AuthorizerExampleStack extends cdk.Stack {
                 ],
               }),
             },
-          }
+          },
         ),
-      }
+      },
     );
 
     const api = new RestApi(this, 'RestApi', {
@@ -400,7 +400,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
       type: ResponseType.UNAUTHORIZED,
       statusCode: '401',
       responseHeaders: {
-        'Access-Control-Allow-Origin': "'*'",
+        'Access-Control-Allow-Origin': '\'*\'',
       },
     });
 
@@ -409,7 +409,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
       restApi: api,
       type: ResponseType.DEFAULT_4XX,
       responseHeaders: {
-        'Access-Control-Allow-Origin': "'*'",
+        'Access-Control-Allow-Origin': '\'*\'',
       },
     });
 
@@ -418,7 +418,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
       restApi: api,
       type: ResponseType.DEFAULT_5XX,
       responseHeaders: {
-        'Access-Control-Allow-Origin': "'*'",
+        'Access-Control-Allow-Origin': '\'*\'',
       },
     });
 
@@ -427,7 +427,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
     }).addRoute('$connect', {
       integration: new WebSocketLambdaIntegration(
         'scheme-handler',
-        graphqlFunction
+        graphqlFunction,
       ),
     });
   }

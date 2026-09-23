@@ -1,9 +1,9 @@
+import { Resolvers } from '../types/generated/graphql.js';
 import { APIGatewayProxyEvent } from 'aws-lambda';
 import {
   CognitoIdentityProviderClient,
   AdminGetUserCommand,
 } from '@aws-sdk/client-cognito-identity-provider';
-import { Resolvers } from '../types/generated/graphql.js';
 import { Logger } from '@aws-lambda-powertools/logger';
 
 const logger = new Logger();
@@ -26,7 +26,7 @@ const resolvers: Resolvers = {
     github: async (
       _: unknown,
       __: unknown,
-      context: unknown
+      context: unknown,
     ): Promise<{ username: string | null }> => {
       logger.info(`event: ${JSON.stringify(context)}`);
 
@@ -42,10 +42,10 @@ const resolvers: Resolvers = {
         new AdminGetUserCommand({
           UserPoolId: userPoolId,
           Username: username,
-        })
+        }),
       );
       const githubUsername = response.UserAttributes?.find(
-        (attr) => attr.Name === 'custom:github'
+        (attr) => attr.Name === 'custom:github',
       )?.Value;
       return {
         username: githubUsername || null,
@@ -56,10 +56,10 @@ const resolvers: Resolvers = {
     username: async (
       parent: unknown,
       _: unknown,
-      context: unknown
+      context: unknown,
     ): Promise<string | null> => {
       logger.info(
-        `parent: ${JSON.stringify(parent)} event: ${JSON.stringify(context)}`
+        `parent: ${JSON.stringify(parent)} event: ${JSON.stringify(context)}`,
       );
 
       const { authorizer } = (context as { event: APIGatewayProxyEvent }).event
@@ -74,10 +74,10 @@ const resolvers: Resolvers = {
         new AdminGetUserCommand({
           UserPoolId: userPoolId,
           Username: username,
-        })
+        }),
       );
       const githubUsername = response.UserAttributes?.find(
-        (attr) => attr.Name === 'custom:github'
+        (attr) => attr.Name === 'custom:github',
       )?.Value;
       return githubUsername || null;
     },

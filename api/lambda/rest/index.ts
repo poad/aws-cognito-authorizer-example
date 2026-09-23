@@ -9,10 +9,10 @@ const logger = new Logger();
 
 export const handler: APIGatewayProxyHandler = async (
   event,
-  context
+  context,
 ): Promise<APIGatewayProxyResult> => {
   logger.info(
-    `event: ${JSON.stringify(event)} context: ${JSON.stringify(context)}`
+    `event: ${JSON.stringify(event)} context: ${JSON.stringify(context)}`,
   );
 
   const { authorizer } = event.requestContext;
@@ -27,10 +27,10 @@ export const handler: APIGatewayProxyHandler = async (
     new AdminGetUserCommand({
       UserPoolId: userPoolId,
       Username: username,
-    })
+    }),
   );
   const githubUsername = response.UserAttributes?.find(
-    (attr) => attr.Name === 'custom:github'
+    (attr) => attr.Name === 'custom:github',
   )?.Value;
 
   return Promise.resolve({

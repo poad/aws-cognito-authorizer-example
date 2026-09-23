@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import * as cdk from 'aws-cdk-lib';
 import { AuthorizerExampleStack } from '../lib/authorizer-example-stack.js';
+import * as cdk from 'aws-cdk-lib';
 
 const app = new cdk.App();
 const environment = app.node.tryGetContext('env');
