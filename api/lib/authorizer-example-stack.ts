@@ -1,5 +1,3 @@
-import { WebSocketApi } from 'aws-cdk-lib/aws-apigatewayv2';
-import { WebSocketLambdaIntegration } from 'aws-cdk-lib/aws-apigatewayv2-integrations';
 import * as cdk from 'aws-cdk-lib';
 import { Duration, RemovalPolicy } from 'aws-cdk-lib';
 import {
@@ -11,6 +9,8 @@ import {
   ResponseType,
   RestApi,
 } from 'aws-cdk-lib/aws-apigateway';
+import { WebSocketApi } from 'aws-cdk-lib/aws-apigatewayv2';
+import { WebSocketLambdaIntegration } from 'aws-cdk-lib/aws-apigatewayv2-integrations';
 import {
   AccountRecovery,
   CfnIdentityPool,
@@ -35,10 +35,10 @@ import * as ssm from 'aws-cdk-lib/aws-ssm';
 import { Construct } from 'constructs';
 
 export interface AuthorizerExampleStackProps extends cdk.StackProps {
-  environment: string;
-  userPoolName: string;
-  callbackUrls?: string[];
-  logoutUrls?: string[];
+  readonly environment: string;
+  readonly userPoolName: string;
+  readonly callbackUrls?: string[];
+  readonly logoutUrls?: string[];
 }
 
 export class AuthorizerExampleStack extends cdk.Stack {
@@ -217,7 +217,6 @@ export class AuthorizerExampleStack extends cdk.Stack {
       },
     );
 
-     
     new CfnIdentityPoolRoleAttachment(this, 'IdentityPoolRoleAttachment', {
       identityPoolId: identityPool.ref,
       roles: {
@@ -394,31 +393,28 @@ export class AuthorizerExampleStack extends cdk.Stack {
         authorizer,
       });
 
-     
     new GatewayResponse(this, 'UnauthorizedGatewayResponse', {
       restApi: api,
       type: ResponseType.UNAUTHORIZED,
       statusCode: '401',
       responseHeaders: {
-        'Access-Control-Allow-Origin': '\'*\'',
+        'Access-Control-Allow-Origin': "'*'",
       },
     });
 
-     
     new GatewayResponse(this, 'ClientErrorGatewayResponse', {
       restApi: api,
       type: ResponseType.DEFAULT_4XX,
       responseHeaders: {
-        'Access-Control-Allow-Origin': '\'*\'',
+        'Access-Control-Allow-Origin': "'*'",
       },
     });
 
-     
     new GatewayResponse(this, 'ServerErrorGatewayResponse', {
       restApi: api,
       type: ResponseType.DEFAULT_5XX,
       responseHeaders: {
-        'Access-Control-Allow-Origin': '\'*\'',
+        'Access-Control-Allow-Origin': "'*'",
       },
     });
 

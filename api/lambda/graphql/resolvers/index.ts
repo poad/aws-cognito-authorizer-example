@@ -1,10 +1,11 @@
 import { Resolvers } from '../types/generated/graphql.js';
-import { APIGatewayProxyEvent } from 'aws-lambda';
+
+import { Logger } from '@aws-lambda-powertools/logger';
 import {
   CognitoIdentityProviderClient,
   AdminGetUserCommand,
 } from '@aws-sdk/client-cognito-identity-provider';
-import { Logger } from '@aws-lambda-powertools/logger';
+import { APIGatewayProxyEvent } from 'aws-lambda';
 
 const logger = new Logger();
 

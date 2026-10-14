@@ -2,9 +2,10 @@
 import useSession from '../auth/hooks/useSession';
 import Fetch from '../fetch/components';
 import GraphQLFetch from '../graphql';
-import { Authenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
 import styles from './styles/Home.module.css';
+
+import '@aws-amplify/ui-react/styles.css';
+import { Authenticator } from '@aws-amplify/ui-react';
 import { JSX } from 'react';
 
 export default function Home(): JSX.Element {

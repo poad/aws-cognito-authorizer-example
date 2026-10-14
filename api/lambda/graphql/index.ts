@@ -1,4 +1,5 @@
 import schemaWithResolvers from './schema.js';
+
 import { ApolloServer } from '@apollo/server';
 import {
   startServerAndCreateLambdaHandler,

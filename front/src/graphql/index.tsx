@@ -1,8 +1,9 @@
 'use client';
 
+import Status from '../fetch/components/status';
+
 import { useQuery } from '@apollo/client/react';
 import { gql } from 'graphql-tag';
-import Status from '../fetch/components/status';
 
 const GraphQLFetch = () => {
   const { loading, error, data } = useQuery(gql`

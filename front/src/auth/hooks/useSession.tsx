@@ -1,5 +1,5 @@
+import { fetchAuthSession, AuthSession } from '@aws-amplify/core';
 import { useEffect, useState } from 'react';
-import { fetchAuthSession , AuthSession } from '@aws-amplify/core';
 
 export interface Session {
   idToken: {
@@ -17,11 +17,11 @@ const useSession = (): Session | undefined => {
   const [session, setSession] = useState<AuthSession>();
 
   useEffect(() => {
-    // eslint-disable-next-line promise/catch-or-return
+    // oxlint-disable-next-line promise/catch-or-return
     fetchAuthSession()
+      // oxlint-disable-next-line promise/always-return
       .then((it) => {
         setSession(it);
-        // eslint-disable-next-line promise/always-return
         localStorage.setItem('token', it.tokens?.idToken?.toString() ?? '');
       });
   }, []);
