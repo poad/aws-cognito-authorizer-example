@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
 import { AuthTokens, fetchAuthSession } from '@aws-amplify/core';
 import { AWSCredentials } from '@aws-amplify/core/internals/utils';
+import { useEffect, useState } from 'react';
 
 const useAuth = () => {
   const [credentials, setCredentials] = useState<AWSCredentials>();
@@ -10,7 +10,7 @@ const useAuth = () => {
 
   useEffect(() => {
     fetchAuthSession()
-      // eslint-disable-next-line promise/always-return
+      // oxlint-disable-next-line promise/always-return
       .then((session) => {
         setCredentials(session.credentials);
         setTokens(session.tokens);

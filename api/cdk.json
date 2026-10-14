@@ -1,9 +1,7 @@
 {
   "app": "npx tsx bin/authorizer-example.ts",
   "watch": {
-    "include": [
-      "**"
-    ],
+    "include": ["**"],
     "exclude": [
       "README.md",
       "cdk*.json",
@@ -37,14 +35,11 @@
     "@aws-cdk/aws-sns-subscriptions:restrictSqsDescryption": true,
     "@aws-cdk/aws-apigateway:disableCloudWatchRole": true,
     "@aws-cdk/core:enablePartitionLiterals": true,
-    "@aws-cdk/core:target-partitions": [
-      "aws",
-      "aws-cn"
-    ],
+    "@aws-cdk/core:target-partitions": ["aws", "aws-cn"],
     "userPoolName": "lambda-authorizer-user-pool",
     "dev": {
       "callbackUrls": [],
-      "logoutUrls": []  
+      "logoutUrls": []
     }
   }
 }

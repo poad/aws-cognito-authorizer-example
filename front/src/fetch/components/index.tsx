@@ -1,6 +1,7 @@
-import { useState } from 'react';
 import useFetcher from '../hooks/useFetcher';
 import Status from './status';
+
+import { useState } from 'react';
 
 const entpoint = process.env.NEXT_PUBLIC_REST_API_ENDPOINT_URL;
 
@@ -17,9 +18,9 @@ const Fetch = ({ label, token }: { label: string; token?: string }) => {
     <>
       <button
         onClick={() =>
+          // oxlint-disable-next-line promise/always-return
           fetcher(token).then((res) => {
             setStatus(!res.error);
-            // eslint-disable-next-line promise/always-return
             setContent(res.content ? JSON.stringify(res.content) : '');
           })
         }

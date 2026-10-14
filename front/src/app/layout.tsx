@@ -1,22 +1,17 @@
 'use client';
 
-import { JSX, ReactNode } from 'react';
-import {
-  ApolloClient,
-  InMemoryCache,
-} from '@apollo/client';
-import {
-  HttpLink
-} from '@apollo/client/link/http';
-import {
-  ApolloProvider,
-} from '@apollo/client/react';
-import { setContext } from '@apollo/client/link/context';
 import awsconfig from '../aws-config';
+
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+import { HttpLink } from '@apollo/client/link/http';
+import { ApolloProvider } from '@apollo/client/react';
+import { Authenticator } from '@aws-amplify/ui-react';
 import { Amplify } from 'aws-amplify';
 
 import './styles/globals.css';
-import { Authenticator } from '@aws-amplify/ui-react';
+
+import { JSX, ReactNode } from 'react';
 
 Amplify.configure(awsconfig);
 

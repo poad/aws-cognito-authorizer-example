@@ -2,28 +2,22 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.7",
-    "@eslint/js": "^10.0.1",
-    "@graphql-eslint/eslint-plugin": "^4.4.1",
-    "@next/eslint-plugin-next": "^16.3.6",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^10.10.0",
-    "eslint-config-next": "^16.3.6",
-    "eslint-import-resolver-typescript": "^4.4.5",
-    "eslint-plugin-import-x": "^4.17.1",
-    "eslint-plugin-promise": "^7.3.0",
-    "jiti": "^2.7.0",
-    "typescript-eslint": "^8.70.0"
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
+    "oxlint-plugin-awscdk": "^1.0.3"
   },
   "scripts": {
     "lint": "pnpm -r --if-present lint",
     "lint-fix": "pnpm -r --if-present lint-fix",
+    "format": "pnpm -r --if-present format",
+    "format-check": "pnpm -r --if-present format-check",
     "build": "pnpm -r --if-present build"
   },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.6.0",
+      "version": "12.13.0",
       "onFail": "download"
     },
     "runtime": {
