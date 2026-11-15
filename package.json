@@ -2,8 +2,8 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.10.0",
-    "oxfmt": "^0.72.0",
+    "@stylistic/eslint-plugin": "^6.0.0-beta.6",
+    "oxfmt": "^0.77.0",
     "oxlint": "^1.92.0",
     "oxlint-plugin-awscdk": "^1.0.4"
   },
@@ -17,12 +17,12 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.20.0",
+      "version": "12.21.0",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "^24.22.3",
+      "version": "^26.13.1",
       "onFail": "download"
     }
   },
