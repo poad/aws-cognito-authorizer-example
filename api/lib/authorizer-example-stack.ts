@@ -240,7 +240,7 @@ export class AuthorizerExampleStack extends cdk.Stack {
       this,
       'AuthorizerExampleLambdaRestFunction',
       {
-        runtime: Runtime.NODEJS_22_X,
+        runtime: Runtime.NODEJS_26_X,
         entry: './lambda/rest/index.ts',
         functionName: restFunctionName,
         retryAttempts: 0,
