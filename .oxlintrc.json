@@ -7,25 +7,6 @@
   "env": {
     "builtin": true
   },
-  "settings": {
-    "import-x/extensions": [
-      ".ts",
-      ".tsx",
-      ".cts",
-      ".mts",
-      ".js",
-      ".jsx",
-      ".cjs",
-      ".mjs"
-    ],
-    "import-x/external-module-folders": ["node_modules", "node_modules/@types"],
-    "import-x/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx", ".cts", ".mts"]
-    },
-    "import-x/resolver": {
-      "typescript": true
-    }
-  },
   "ignorePatterns": [
     "**/logs",
     "**/*.log",
@@ -230,15 +211,9 @@
         "typescript/no-confusing-non-null-assertion": "error",
         "typescript/no-inferrable-types": "error",
         "typescript/prefer-for-of": "error",
-        "typescript/prefer-function-type": "error",
-        "@stylistic/semi": ["error", "always"],
-        "@stylistic/indent": ["error", 2],
-        "@stylistic/comma-dangle": ["error", "always-multiline"],
-        "@stylistic/arrow-parens": ["error", "always"],
-        "@stylistic/quotes": ["error", "single", { "avoidEscape": true }]
+        "typescript/prefer-function-type": "error"
       },
       "plugins": ["typescript"],
-      "jsPlugins": ["@stylistic/eslint-plugin"],
       "env": {
         "es2026": true
       }

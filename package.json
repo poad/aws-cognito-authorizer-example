@@ -2,7 +2,6 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^6.0.0",
     "oxfmt": "^0.78.0",
     "oxlint": "^1.93.0",
     "oxlint-plugin-awscdk": "^1.0.4"
